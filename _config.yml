@@ -1,0 +1,77 @@
+# Site settings
+title: Privileged Users Playbook
+name: Privileged Users Playbook
+email: icam@gsa.gov
+author:
+    name: FICAM
+description: Privileged User Guidance
+baseurl: '/playbook-privilege'
+#url: "http://yourdomain.com" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+github_username:  lachellel
+highlighter: pygments
+
+# Point the logo URL at a file in your repo or hosted elsewhere by your organization
+logourl: 
+logoalt: Federal Identity Credential and Access Management
+
+# Repo list
+# List repos that you would like to appear on the homepage here
+repos:
+- name: playbook-privilege
+  description: FICAM Playbook - Privileged User Guidance
+  url: https://github.com/allietbo/playbook-privilege
+
+# Build settings
+markdown: kramdown
+
+exclude:
+- bin
+- config.rb
+- Gemfile
+- Gemfile.lock
+- gems
+- Procfile
+- Rakefile
+- README.md
+- script
+- vendor
+
+navigation:
+- text: Introduction
+  url: index.html
+  internal: true
+  coll: false
+- text: Developer Guides
+  url: devconfig/index/
+  internal: true
+  coll: true
+  collname: devconfig
+- text: User Guides
+  url: userconfig/index/
+  internal: true
+  coll: true
+  collname: userconfig
+
+
+#https://github.com/jekyll/jekyll/issues/2346
+collections:
+  userconfig:
+    label: "User Guides"
+    permalink: /userconfig/:path/
+    output: true
+  devconfig:
+    label: "Developer Guides"
+    permalink: /devconfig/:path/
+    output: true
+
+
+
+include:
+- _stylesheets
+- _javascript
+
+
+
+# Custom site configuration
+lang: en
