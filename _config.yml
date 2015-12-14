@@ -42,6 +42,22 @@ navigation:
   url: index.html
   internal: true
   coll: false
+- text: Secure Operating Environment
+  url: operating
+  internal: true
+  coll: false
+- text: Provisioning
+  url: provisioning
+  internal: true
+  coll: false
+- text: Runtime Access Control
+  url: runtime
+  internal: true
+  coll: false
+- text: Ongoing Monitoring
+  url: monitoring
+  internal: true
+  coll: false
 - text: Developer Guides
   url: devconfig/index/
   internal: true
@@ -52,6 +68,10 @@ navigation:
   internal: true
   coll: true
   collname: userconfig
+- text: Additional References
+  url: ref
+  internal: true
+  coll: false
 
 
 #https://github.com/jekyll/jekyll/issues/2346
